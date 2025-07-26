@@ -2929,7 +2929,7 @@ coroutine.wrap(function()
 				pcall(function()
 					if v ~= game.Players.LocalPlayer then
 						local Distance = (v.Character:FindFirstChildOfClass("Part").Position - game.Players.LocalPlayer.Character:FindFirstChildOfClass("Part").Position).magnitude
-						if Distance <= 10 then
+						if Distance <= 20000 then
 							for i = 1,25 do
 								game.ReplicatedStorage.meleeEvent:FireServer(v)
 							end
